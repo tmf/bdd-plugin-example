@@ -1,0 +1,35 @@
+{
+  "name": "tmf/bdd-plugin-example",
+  "type": "wordpress-plugin",
+  "description": "An example on how to use Behat and Behavior Driven Development in a WordPress plugin",
+
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tom Forrer",
+      "email": "tom.forrer@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "/Users/tmf/Projects/WordPressExtension"
+    }
+  ],
+  "require-dev": {
+    "behat/mink-goutte-driver": "~1.1",
+    "tmf/wordpress-extension": "dev-behat3",
+    "phpunit/phpunit": "~4.0",
+    "johnpbloch/wordpress": "4.0"
+  },
+  "autoload": {
+    "psr-4": { "Tmf\\PluginExample\\": "" }
+  },
+  "extra": {
+    "wordpress-install-dir": "vendor/wordpress"
+  }
+}
