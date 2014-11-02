@@ -13,8 +13,8 @@ default:
                 username: 'root'
                 password: ''
 
-      Behat\MinkExtension:
-          base_url:    'http://localhost:8000'
-          sessions:
-              default:
-                  goutte: ~
+        Behat\MinkExtension:
+            base_url:    'http://localhost:8000'
+            sessions:
+                default:
+                    goutte: ~
