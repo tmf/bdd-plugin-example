@@ -1,20 +1,20 @@
 default:
-  autoload:
-    - %paths.base%/Features/Context
-  suites:
-    default:
-      contexts:
-        - Tmf\PluginExample\Features\Context\PluginFeatureContext
-  extensions:
-    Tmf\WordPressExtension:
-      path: '%paths.base%/vendor/wordpress'
-      symlink_base_to_path: '%paths.base%/vendor/wordpress/wp-content/plugins/bdd-plugin-example'
-      connection:
-        username: 'root'
-        password: ''
-
-    Behat\MinkExtension:
-      base_url:    'http://localhost:8000'
-      sessions:
+    autoload:
+        - %paths.base%/Features/Context
+    suites:
         default:
-          goutte: ~
+            contexts:
+                - Tmf\PluginExample\Features\Context\PluginFeatureContext
+    extensions:
+        Tmf\WordPressExtension:
+            path: '%paths.base%/vendor/wordpress'
+            symlink_base_to_path: '%paths.base%/vendor/wordpress/wp-content/plugins/bdd-plugin-example'
+            connection:
+                username: 'root'
+                password: ''
+
+      Behat\MinkExtension:
+          base_url:    'http://localhost:8000'
+          sessions:
+              default:
+                  goutte: ~
