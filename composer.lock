@@ -2072,7 +2072,7 @@
             "source": {
                 "type": "git",
                 "url": "/Users/tmf/Projects/WordPressExtension",
-                "reference": "7c0707e1e49d0608884ff54f154b4d49a6ca4135"
+                "reference": "238a83afff9fcde19e0656098f252e3f3ab016ba"
             },
             "require": {
                 "behat/behat": "~3.0,>=3.0.4",
@@ -2110,7 +2110,7 @@
                 "story",
                 "wordpress"
             ],
-            "time": "2014-11-02 13:14:44"
+            "time": "2014-11-02 15:06:13"
         }
     ],
     "aliases": [],
