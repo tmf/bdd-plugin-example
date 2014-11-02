@@ -5,11 +5,14 @@ php:
   - 5.5
   - 5.6
 
-env:
-  - DB=mysql
+services:
+  - mysql
 
 before_script:
-  - if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS wordpress;" -uroot; fi
-  - composer install
 
-script: vendor/bin/behat
+  - composer install --no-interaction --prefer-source   # Have to prefer source or hit github rate limit
+  - git submodule update --init --recursive             # not really needed but makes sure submodules are there
+  - mysql -e 'create database IF NOT EXISTS wordpress;' # db setup
+  - php -S localhost:8000 -t vendor/wordpress &         # webserver setup
+
+script: vendor/bin/behat --config behat.yml             # run behat
