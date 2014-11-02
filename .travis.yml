@@ -10,11 +10,11 @@ services:
 
 before_script:
 
-  - composer install --no-interaction --prefer-source   # Have to prefer source or hit github rate limit
-  - git submodule update --init --recursive             # not really needed but makes sure submodules are there
-  - mysql -e 'create database IF NOT EXISTS wordpress;' # db setup
-  - php -S localhost:8000 -t vendor/wordpress &         # webserver setup
-  - sleep 3                                             # wait for the built in web server
+  - composer install --no-interaction --prefer-source    # Have to prefer source or hit github rate limit
+  - git submodule update --init --recursive              # not really needed but makes sure submodules are there
+  - mysql -e 'create database IF NOT EXISTS wordpress;'  # db setup
+  - php -S localhost:8000 -t vendor/wordpress &          # webserver setup
+  - sleep 3                                              # wait for the built in web server
 
 script:
-  - ./vendor/bin/behat -c ./behat.yml                   # run behat
+  - vendor/bin/behat --config behat.yml --profile default # run behat
