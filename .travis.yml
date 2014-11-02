@@ -17,4 +17,4 @@ before_script:
   - sleep 3                                              # wait for the built in web server
 
 script:
-  - vendor/bin/behat --config behat.yml --profile default # run behat
+  - vendor/bin/behat -fprogress --strict  # run behat
