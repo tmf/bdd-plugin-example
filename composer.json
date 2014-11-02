@@ -14,15 +14,10 @@
     "php": ">=5.4.0",
     "composer/installers": "*"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "/Users/tmf/Projects/WordPressExtension"
-    }
-  ],
+
   "require-dev": {
     "behat/mink-goutte-driver": "~1.1",
-    "tmf/wordpress-extension": "dev-behat3",
+    "tmf/wordpress-extension": "dev-master",
     "phpunit/phpunit": "~4.0",
     "johnpbloch/wordpress": "4.0"
   },

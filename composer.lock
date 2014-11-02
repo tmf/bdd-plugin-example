@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8319e94581af4643300cf01b598d8326",
+    "hash": "0259a24529616c1226df5ece84de2e01",
     "packages": [
         {
             "name": "composer/installers",
@@ -2071,8 +2071,14 @@
             "version": "dev-behat3",
             "source": {
                 "type": "git",
-                "url": "/Users/tmf/Projects/WordPressExtension",
-                "reference": "238a83afff9fcde19e0656098f252e3f3ab016ba"
+                "url": "https://github.com/tmf/WordPressExtension.git",
+                "reference": "57c3a6b85e380dc55f6a7237f82fb2da12e76b8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tmf/WordPressExtension/zipball/57c3a6b85e380dc55f6a7237f82fb2da12e76b8f",
+                "reference": "57c3a6b85e380dc55f6a7237f82fb2da12e76b8f",
+                "shasum": ""
             },
             "require": {
                 "behat/behat": "~3.0,>=3.0.4",
@@ -2090,6 +2096,7 @@
                     "../../phpunit/phpunit/src/Framework/Assert/Functions.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2105,12 +2112,12 @@
             ],
             "description": "WordPress extension for Behat 3",
             "keywords": [
-                "bdd",
-                "behat",
+                "BDD",
+                "Behat",
                 "story",
                 "wordpress"
             ],
-            "time": "2014-11-02 15:06:13"
+            "time": "2014-11-02 15:38:11"
         }
     ],
     "aliases": [],
