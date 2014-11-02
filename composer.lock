@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0259a24529616c1226df5ece84de2e01",
+    "hash": "580b06f080dbf353f40078184b32dbf7",
     "packages": [
         {
             "name": "composer/installers",
@@ -2068,16 +2068,16 @@
         },
         {
             "name": "tmf/wordpress-extension",
-            "version": "dev-behat3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tmf/WordPressExtension.git",
-                "reference": "57c3a6b85e380dc55f6a7237f82fb2da12e76b8f"
+                "reference": "49e2857a905eead49ebcc8d45238194f53b399b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tmf/WordPressExtension/zipball/57c3a6b85e380dc55f6a7237f82fb2da12e76b8f",
-                "reference": "57c3a6b85e380dc55f6a7237f82fb2da12e76b8f",
+                "url": "https://api.github.com/repos/tmf/WordPressExtension/zipball/49e2857a905eead49ebcc8d45238194f53b399b9",
+                "reference": "49e2857a905eead49ebcc8d45238194f53b399b9",
                 "shasum": ""
             },
             "require": {
@@ -2117,7 +2117,7 @@
                 "story",
                 "wordpress"
             ],
-            "time": "2014-11-02 15:38:11"
+            "time": "2014-11-02 15:57:11"
         }
     ],
     "aliases": [],

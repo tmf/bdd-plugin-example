@@ -14,5 +14,7 @@ before_script:
   - git submodule update --init --recursive             # not really needed but makes sure submodules are there
   - mysql -e 'create database IF NOT EXISTS wordpress;' # db setup
   - php -S localhost:8000 -t vendor/wordpress &         # webserver setup
+  - sleep 3                                             # wait for the built in web server
 
-script: vendor/bin/behat --config behat.yml             # run behat
+script:
+  - ./vendor/bin/behat -c ./behat.yml                   # run behat
