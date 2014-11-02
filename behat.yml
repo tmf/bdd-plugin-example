@@ -1,10 +1,10 @@
 default:
     autoload:
-        - %paths.base%/Features/Context
+        - %paths.base%/features/Context
     suites:
         default:
             contexts:
-                - Tmf\PluginExample\Features\Context\PluginFeatureContext
+                - PluginFeatureContext
     extensions:
         Tmf\WordPressExtension:
             path: '%paths.base%/vendor/wordpress'
