@@ -9,16 +9,16 @@ Feature: Manage plugins
       | BDD WordPress | tom.forrer@gmail.com    | admin    | test     |
     And I am logged in as "admin" with password "test"
 
-  Scenario: Enable the dolly plugin
+  Scenario: Enable the BDD Plugin Example plugin
     Given there are plugins
       | plugin    | status  |
-      | hello.php | enabled |
+      | bdd-plugin-example/bdd-plugin-example.php | enabled |
     When I go to "/wp-admin/"
-    Then I should see a "#dolly" element
+    Then I should see "BDD is awesome!"
 
-  Scenario: Disable the dolly plugin
+  Scenario: Disable the BDD Plugin Example plugin
     Given there are plugins
       | plugin    | status   |
-      | hello.php | disabled |
+      | bdd-plugin-example/bdd-plugin-example.php | disabled |
     When I go to "/wp-admin/"
-    Then I should not see a "#dolly" element
+    Then I should not see "BDD is awesome!"
