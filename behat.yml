@@ -8,7 +8,8 @@ default:
     extensions:
         Tmf\WordPressExtension:
             path: '%paths.base%/vendor/wordpress'
-            symlink_base_to_path: '%paths.base%/vendor/wordpress/wp-content/plugins/bdd-plugin-example'
+            symlink:
+                to: '%paths.base%/vendor/wordpress/wp-content/plugins/bdd-plugin-example'
             connection:
                 username: 'root'
                 password: ''
